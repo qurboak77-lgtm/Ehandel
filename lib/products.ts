@@ -356,5 +356,76 @@ export const products: Product[] = [
         ]
       }
     ]
+  },
+  {
+    id: "guldhalsband",
+    title: "Guldhalsband",
+    shortDescription: "Fint guldhalsband som lyfter din look.",
+    description: "Smycke i 18k förgyllt guld med tidlöst hängsmycke. Perfekt både till vardag och fest.",
+    features: ["18k förgyllt guld", "Justbar längd", "Elegant design", "Nickelfri"],
+    basePrice: 899,
+    images: [
+      { id: "main", url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=640&h=420&fit=crop&crop=center", alt: "Guldhalsband huvudbild" },
+      { id: "detail1", url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=640&h=420&fit=crop&crop=center", alt: "Guldhalsband detalj" },
+      { id: "model", url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=640&h=420&fit=crop&crop=center", alt: "Guldhalsband på modell" }
+    ],
+    variantGroups: [
+      {
+        id: "length",
+        name: "Längd",
+        variants: [
+          { id: "40cm", name: "40 cm", value: "40cm" },
+          { id: "45cm", name: "45 cm", value: "45cm" },
+          { id: "50cm", name: "50 cm", value: "50cm" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "rosa-kortklanning",
+    title: "Rosa Kortklänning",
+    shortDescription: "Söt rosa klänning för fest och vardag.",
+    description: "Kort klänning i lätt material med volangdetaljer. En dröm för sommarfester och bruncher.",
+    features: ["Lätt material", "Volangdetaljer", "Kort ärm", "Figursydd midja"],
+    basePrice: 649,
+    images: [
+      { id: "main", url: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=640&h=420&fit=crop&crop=center", alt: "Rosa Kortklänning huvudbild" },
+      { id: "detail", url: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=640&h=420&fit=crop&crop=center", alt: "Rosa Kortklänning detalj" },
+      { id: "back", url: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=640&h=420&fit=crop&crop=center", alt: "Rosa Kortklänning baksida" }
+    ],
+    variantGroups: [
+      {
+        id: "size",
+        name: "Storlek",
+        variants: [
+          { id: "s", name: "S", value: "Small" },
+          { id: "m", name: "M", value: "Medium" },
+          { id: "l", name: "L", value: "Large" }
+        ]
+      }
+    ]
+  },
+  {
+    id: "guldarmband",
+    title: "Guldarmband",
+    shortDescription: "Stilrent armband i guld.",
+    description: "Elegant armband i guldfinish med justerbar låsning. Passar både vardag och fest.",
+    features: ["Guldfinish", "Justerbar storlek", "Lätt design", "Högglans"],
+    basePrice: 599,
+    images: [
+      { id: "main", url: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=640&h=420&fit=crop&crop=center", alt: "Guldarmband huvudbild" },
+      { id: "detail1", url: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=640&h=420&fit=crop&crop=center", alt: "Guldarmband detalj" },
+      { id: "wrist", url: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=640&h=420&fit=crop&crop=center", alt: "Guldarmband på handled" }
+    ],
+    variantGroups: [
+      {
+        id: "style",
+        name: "Stil",
+        variants: [
+          { id: "plain", name: "Enkelt", value: "Plain" },
+          { id: "charm", name: "Charm", value: "Charm" }
+        ]
+      }
+    ]
   }
 ];

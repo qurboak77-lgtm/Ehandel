@@ -4,8 +4,8 @@ import { Providers } from "../components/Providers";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "E-handel",
-  description: "En enkel e-handelsdemo byggd med Next.js",
+  title: "QURBO",
+  description: "Där elegans möter attityd. Utvalda kläder och smycken från Qurbo.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

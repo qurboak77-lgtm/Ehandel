@@ -37,7 +37,12 @@ export default function Header() {
     : [];
 
   // Check if a route is active
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => {
+    if (href === "/products") {
+      return pathname === "/" || pathname.startsWith("/product");
+    }
+    return pathname === href;
+  };
 
   // Close menus when clicking outside
   useEffect(() => {
@@ -64,7 +69,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="logo">
             <span className="logo-icon">🛍️</span>
-            <span className="logo-text">E-handel</span>
+            <span className="logo-text">QURBO</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -74,6 +79,24 @@ export default function Header() {
               className={`nav-link ${isActive("/") ? "active" : ""}`}
             >
               Start
+            </Link>
+            <a
+              href="#products"
+              className={`nav-link ${isActive("/products") ? "active" : ""}`}
+            >
+              Produkter
+            </a>
+            <Link
+              href="/cart"
+              className={`nav-link ${isActive("/cart") ? "active" : ""}`}
+            >
+              Kundvagn
+            </Link>
+            <Link
+              href="/account"
+              className={`nav-link ${isActive("/account") ? "active" : ""}`}
+            >
+              Konto
             </Link>
           </nav>
 
@@ -196,6 +219,13 @@ export default function Header() {
             >
               Start
             </Link>
+            <a
+              href="#products"
+              className={`mobile-menu-item ${isActive("/products") ? "active" : ""}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Produkter
+            </a>
             <Link
               href="/cart"
               className={`mobile-menu-item ${isActive("/cart") ? "active" : ""}`}
@@ -204,13 +234,12 @@ export default function Header() {
               Kundvagn {getTotalItems() > 0 && `(${getTotalItems()})`}
             </Link>
             <Link
-              href="/checkout"
-              className={`mobile-menu-item ${isActive("/checkout") ? "active" : ""}`}
+              href="/account"
+              className={`mobile-menu-item ${isActive("/account") ? "active" : ""}`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Kassa
+              Konto
             </Link>
-
             {/* Mobile Search */}
             <div className="mobile-search">
               <input
@@ -659,6 +688,9 @@ export default function Header() {
         .mobile-menu-item:hover,
         .mobile-menu-item.active {
           color: white;
+          font-weight: 600;
+          background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.1));
+          border-left: 3px solid #3b82f6;
           padding-left: 0.5rem;
         }
 

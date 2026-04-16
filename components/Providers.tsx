@@ -8,7 +8,7 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 function getStoredUser(): User | null {
   if (typeof window === "undefined") return null;
   try {
-    const stored = window.localStorage.getItem("ehandel_user");
+    const stored = window.localStorage.getItem("qurbo_user");
     return stored ? JSON.parse(stored) : null;
   } catch {
     return null;
@@ -18,7 +18,7 @@ function getStoredUser(): User | null {
 function getUsers(): User[] {
   if (typeof window === "undefined") return [];
   try {
-    const stored = window.localStorage.getItem("ehandel_users");
+    const stored = window.localStorage.getItem("qurbo_users");
     return stored ? JSON.parse(stored) : [];
   } catch {
     return [];
@@ -27,7 +27,7 @@ function getUsers(): User[] {
 
 function saveUsers(users: User[]) {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem("ehandel_users", JSON.stringify(users));
+  window.localStorage.setItem("qurbo_users", JSON.stringify(users));
 }
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -40,9 +40,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (user) {
-      window.localStorage.setItem("ehandel_user", JSON.stringify(user));
+      window.localStorage.setItem("qurbo_user", JSON.stringify(user));
     } else {
-      window.localStorage.removeItem("ehandel_user");
+      window.localStorage.removeItem("qurbo_user");
     }
   }, [user]);
 

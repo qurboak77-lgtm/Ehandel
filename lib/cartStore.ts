@@ -128,7 +128,7 @@ export const useCartStore = create<CartState>()(
       }
     }),
     {
-      name: 'ehandel-cart', // namn för localStorage
+      name: 'qurbo-cart', // namn för localStorage
       // Automatisk synkronisering till localStorage
     }
   )

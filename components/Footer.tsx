@@ -20,8 +20,8 @@ export default function Footer() {
         marginBottom: "1.5rem"
       }}>
         <div>
-          <h3 style={{ color: "white", marginBottom: "1rem" }}>E-handel</h3>
-          <p>Din favoritbutik för mode och stil. Vi erbjuder kvalitetskläder till bra priser.</p>
+          <h3 style={{ color: "white", marginBottom: "1rem" }}>QURBO</h3>
+          <p>Där elegans möter attityd. Utvalda kläder och smycken från Qurbo.</p>
         </div>
 
         <div>
@@ -49,15 +49,15 @@ export default function Footer() {
           <h4 style={{ color: "white", marginBottom: "1rem" }}>Kundservice</h4>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             <li style={{ marginBottom: "0.5rem" }}>
-              <a href="mailto:support@ehandel.se" style={{ color: "#d1d5db", textDecoration: "none" }}>
-                support@ehandel.se
+              <a href="mailto:support@qurbo.se" style={{ color: "#d1d5db", textDecoration: "none" }}>
+                support@qurbo.se
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
-              <span>Tel: 08-123 45 67</span>
+              <span>Tel: 010-987 65 43</span>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
-              <span>Mån-Fre: 9-17</span>
+              <span>Mån-Fre: 10-18, Lör: 10-16</span>
             </li>
           </ul>
         </div>
@@ -65,9 +65,9 @@ export default function Footer() {
         <div>
           <h4 style={{ color: "white", marginBottom: "1rem" }}>Följ oss</h4>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
-            <a href="#" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }}>📘</a>
-            <a href="#" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }}>📷</a>
-            <a href="#" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }}>🐦</a>
+            <a href="https://instagram.com/qurbo" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }} title="Följ oss på Instagram">📷</a>
+            <a href="https://facebook.com/qurbo" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }} title="Följ oss på Facebook">📘</a>
+            <a href="https://pinterest.com/qurbo" style={{ color: "#d1d5db", textDecoration: "none", fontSize: "1.5rem" }} title="Följ oss på Pinterest">📌</a>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ export default function Footer() {
         paddingTop: "1.5rem",
         fontSize: "0.875rem"
       }}>
-        <p>&copy; 2024 E-handel. Alla rättigheter förbehållna.</p>
+        <p>&copy; 2024 QURBO. Alla rättigheter förbehållna.</p>
       </div>
     </footer>
   );
