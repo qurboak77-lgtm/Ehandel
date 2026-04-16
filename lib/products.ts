@@ -8,7 +8,7 @@ export const products: Product[] = [
     description: "En vacker sommarklänning i lätt bomull med blommönster. Perfekt för fester, strandpromenader eller vardagsbruk.",
     features: ["100% bomull", "Luftig passform", "Blommönster", "Maskintvättbar"],
     price: 799,
-    image: "https://via.placeholder.com/640x420?text=Sommarklanning",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "skinny-jeans",
@@ -17,7 +17,7 @@ export const products: Product[] = [
     description: "Högkvalitativa skinny jeans i stretchmaterial som sitter perfekt. Komfortabla för hela dagen och lätta att kombinera.",
     features: ["Stretchmaterial", "Hög midja", "5 fickor", "Slim passform"],
     price: 599,
-    image: "https://via.placeholder.com/640x420?text=Skinny+Jeans",
+    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "silkesblus",
@@ -26,7 +26,7 @@ export const products: Product[] = [
     description: "En tidlös silkesblus med knäppning framtill. Perfekt för kontoret eller en romantisk middag.",
     features: ["100% silke", "Knäppning framtill", "Långärmad", "Elegant design"],
     price: 899,
-    image: "https://via.placeholder.com/640x420?text=Silkesblus",
+    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "sneakers",
@@ -35,7 +35,7 @@ export const products: Product[] = [
     description: "Bekväma sneakers i vitt läder med gummisula. Perfekta för promenader, träning eller som vardagsskor.",
     features: ["Läderöverkropp", "Gummisula", "Snörning", "Vattentåliga"],
     price: 699,
-    image: "https://via.placeholder.com/640x420?text=Vita+Sneakers",
+    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "bomullstopp",
@@ -44,7 +44,7 @@ export const products: Product[] = [
     description: "Mjuk och andas bomullstopp med kort ärm. Perfekt för avslappnade dagar eller som basplagg.",
     features: ["100% bomull", "Kort ärm", "Rund halsringning", "Bekväm passform"],
     price: 249,
-    image: "https://via.placeholder.com/640x420?text=Bomullstopp",
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "cardigan",
@@ -53,16 +53,16 @@ export const products: Product[] = [
     description: "Elegant cardigan i mjuk ull som håller dig varm under kyliga dagar. Perfekt över en blus eller ensam.",
     features: ["100% ull", "Knäppning framtill", "Långärmad", "Klassisk design"],
     price: 1299,
-    image: "https://via.placeholder.com/640x420?text=Ullcardigan",
+    image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "pennykjol",
     title: "Pennykjol",
-    shortDescription: "Klassisk pennyk jol i tweed.",
-    description: "Tidlös pennyk jol i kvalitativ tweed. Perfekt för kontoret eller fester med en elegant touch.",
+    shortDescription: "Klassisk pennykjol i tweed.",
+    description: "Tidlös pennykjol i kvalitativ tweed. Perfekt för kontoret eller fester med en elegant touch.",
     features: ["Tweedmaterial", "Knäppning framtill", "Midikjol", "Figursydd"],
     price: 899,
-    image: "https://via.placeholder.com/640x420?text=Pennykjol",
+    image: "https://images.unsplash.com/photo-1583496661160-fb5886a6aaaa?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "skinnjacka",
@@ -71,7 +71,7 @@ export const products: Product[] = [
     description: "Klassisk läderjacka i mjukt läder. Ger en tuff look och passar perfekt över många outfits.",
     features: ["Äkta läder", "Blixtlås framtill", "Flera fickor", "Slim passform"],
     price: 1999,
-    image: "https://via.placeholder.com/640x420?text=Laderjacka",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "sjal",
@@ -80,7 +80,7 @@ export const products: Product[] = [
     description: "Ljuvlig siden sjal som kan användas som accessoar till många outfits. Ger en sofistikerad touch.",
     features: ["100% siden", "Storlek 180x90cm", "Fluffig kant", "Flera färger"],
     price: 499,
-    image: "https://via.placeholder.com/640x420?text=Siden+Sjal",
+    image: "https://images.unsplash.com/photo-1601762603332-db5e4b90cc5d?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "hogklackat",
@@ -89,7 +89,7 @@ export const products: Product[] = [
     description: "Klassiska högklackade pumps i svart läder. Perfekta för fester, bröllop eller viktiga möten.",
     features: ["Läder", "10cm klack", "Spetsig tå", "Komfortsula"],
     price: 1299,
-    image: "https://via.placeholder.com/640x420?text=Hogklackade+Pumps",
+    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "handvaska",
@@ -98,7 +98,7 @@ export const products: Product[] = [
     description: "Kvalitativ läderväska med justerbart axelband. Tillräckligt stor för det viktigaste men fortfarande elegant.",
     features: ["Äkta läder", "Justerbart band", "Flera fickor", "Vattentålig"],
     price: 1599,
-    image: "https://via.placeholder.com/640x420?text=Lader+Handvaska",
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=640&h=420&fit=crop&crop=center",
   },
   {
     id: "orhangen",
@@ -107,6 +107,6 @@ export const products: Product[] = [
     description: "Vackra örhängen i 18k guld med små pärlor. Perfekta för vardag eller festliga tillfällen.",
     features: ["18k guld", "Pärldetaljer", "Lätt design", "Nickelfri"],
     price: 799,
-    image: "https://via.placeholder.com/640x420?text=Guld+Orhangen",
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=640&h=420&fit=crop&crop=center",
   },
 ];
