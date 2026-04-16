@@ -2,29 +2,26 @@
 
 import Link from "next/link";
 import { Product } from "../lib/types";
-import { useCart } from "./Providers";
 
 interface ProductCardProps {
   product: Product;
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const { addToCart } = useCart();
-
   return (
     <article className="card">
       <Link href={`/product/${product.id}`}>
-        <img src={product.image} alt={product.title} />
+        <img src={product.images[0]?.url} alt={product.title} />
       </Link>
       <div>
         <h3>{product.title}</h3>
         <p>{product.shortDescription}</p>
       </div>
       <div className="card-footer">
-        <span>{product.price.toFixed(2)} kr</span>
-        <button className="button" onClick={() => addToCart(product)}>
-          Lägg i kundvagn
-        </button>
+        <span>Från {product.basePrice.toFixed(2)} kr</span>
+        <Link href={`/product/${product.id}`} className="button">
+          Se detaljer
+        </Link>
       </div>
     </article>
   );
