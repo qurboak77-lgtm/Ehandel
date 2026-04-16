@@ -202,31 +202,32 @@ export const products: Product[] = [
     id: "pennykjol",
     title: "Pennykjol",
     shortDescription: "Klassisk pennykjol i tweed.",
-    description: "Tidlös pennykjol i kvalitativ tweed. Perfekt för kontoret eller fester med en elegant touch.",
-    features: ["Tweedmaterial", "Knäppning framtill", "Midikjol", "Figursydd"],
+    description: "Tidlös pennykjol i kvalitativ tweed. Perfekt för kontoret eller fester med en elegant touch. Figursydd passform som smickrar silhuetten.",
+    features: ["100% tweed material", "Knäppning framtill", "Midikjol (knälång)", "Figursydd passform", "Bekväm midja", "Maskintvättbar"],
     basePrice: 899,
     images: [
       { id: "main", url: "https://images.unsplash.com/photo-1583496661160-fb5886a6aaaa?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol huvudbild" },
-      { id: "detail1", url: "https://images.unsplash.com/photo-1583496661160-fb5886a6aaaa?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol detalj" },
-      { id: "model", url: "https://images.unsplash.com/photo-1583496661160-fb5886a6aaaa?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol på modell" }
+      { id: "side", url: "https://images.unsplash.com/photo-1587307604615-12af6177ecf5?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol sidasyn" },
+      { id: "detail", url: "https://images.unsplash.com/photo-1591565015571-e8fb88e82e2b?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol tweed-detalj" },
+      { id: "model", url: "https://images.unsplash.com/photo-1606927881806-e08b1ee0f6b5?w=640&h=420&fit=crop&crop=center", alt: "Pennykjol på modell" }
     ],
     variantGroups: [
       {
         id: "size",
         name: "Storlek",
         variants: [
-          { id: "s", name: "S", value: "Small" },
-          { id: "m", name: "M", value: "Medium" },
-          { id: "l", name: "L", value: "Large" }
+          { id: "s", name: "S", value: "Small", priceModifier: 0 },
+          { id: "m", name: "M", value: "Medium", priceModifier: 0 },
+          { id: "l", name: "L", value: "Large", priceModifier: 0 }
         ]
       },
       {
         id: "color",
         name: "Färg",
         variants: [
-          { id: "black", name: "Svart", value: "Black" },
-          { id: "grey", name: "Grå", value: "Grey" },
-          { id: "navy", name: "Mörkblå", value: "Navy" }
+          { id: "black", name: "Svart tweed", value: "Black", priceModifier: 0 },
+          { id: "grey", name: "Grå tweed", value: "Grey", priceModifier: 50 },
+          { id: "navy", name: "Mörkblå tweed", value: "Navy", priceModifier: 50 }
         ]
       }
     ]
@@ -260,22 +261,24 @@ export const products: Product[] = [
     id: "sjal",
     title: "Siden Sjal",
     shortDescription: "Elegant siden sjal för extra stil.",
-    description: "Ljuvlig siden sjal som kan användas som accessoar till många outfits. Ger en sofistikerad touch.",
-    features: ["100% siden", "Storlek 180x90cm", "Fluffig kant", "Flera färger"],
+    description: "Ljuvlig siden sjal som kan användas som accessoar till många outfits. Ger en sofistikerad och elegant touch till vilken outfit som helst. Perfekt för halvformela tillfällen.",
+    features: ["100% siden (charmeuse)", "Storlek 180x90 cm", "Fluffig frangé-kant", "Glansig finish", "Multifunktionell", "Lättvärdad"],
     basePrice: 499,
     images: [
       { id: "main", url: "https://images.unsplash.com/photo-1601762603332-db5e4b90cc5d?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal huvudbild" },
-      { id: "detail1", url: "https://images.unsplash.com/photo-1601762603332-db5e4b90cc5d?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal detalj" },
-      { id: "texture", url: "https://images.unsplash.com/photo-1601762603332-db5e4b90cc5d?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal textur" }
+      { id: "drape", url: "https://images.unsplash.com/photo-1414235077418-3a2e48d0fb12?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal på axlar" },
+      { id: "detail", url: "https://images.unsplash.com/photo-1611591365069-1cb28d56fcd1?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal detalj" },
+      { id: "texture", url: "https://images.unsplash.com/photo-1535303511164-a575216ee9f5?w=640&h=420&fit=crop&crop=center", alt: "Siden Sjal textur" }
     ],
     variantGroups: [
       {
         id: "color",
         name: "Färg",
         variants: [
-          { id: "red", name: "Röd", value: "Red" },
-          { id: "blue", name: "Blå", value: "Blue" },
-          { id: "black", name: "Svart", value: "Black" }
+          { id: "red", name: "Röd", value: "Red", priceModifier: 0 },
+          { id: "blue", name: "Blå", value: "Blue", priceModifier: 0 },
+          { id: "black", name: "Svart", value: "Black", priceModifier: 0 },
+          { id: "emerald", name: "Smaragdgrön", value: "Emerald", priceModifier: 100 }
         ]
       }
     ]
